@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
   <head>
+    <meta charset="utf-8" />
+    
     <link rel="stylesheet" href="./css/main.css" />
 
     <script async src="./js/index.js"></script>
+    <script async src="./js/api_key.js"></script>
 
 
     <title>bullet-list-to-infographic</title>
@@ -20,6 +23,21 @@
     </div>
     <br>
     <h4 id='date'></h4>
+
+    <p>
+        <label for="fapi-key-pronoun">Api key for the pronun project:</label><br>
+        <input type="text" id="fapi-key-pronoun" name="fapi-key-pronoun">
+    </p>
+    <p>
+        <label for="fsecret-key-pronoun">Secret for the pronun project:</label><br>
+        <input type="password" id="fsecret-key-pronoun" name="fsecret-key-pronoun"> 
+    </p>
+
+    <p>
+        <label for="fsearch-query">Search icons for:</label><br>
+        <input type="text" id="fsearch-query" name="fsearch-query" value='IT'> 
+    </p>
+    
     <div id='response'>No response</div>
   </body>
 </html>
